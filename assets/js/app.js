@@ -39,3 +39,27 @@ $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
       break;
   }
 });
+
+$('.cta').on('click', function () {
+  if ($(window).width() < 768) {
+    $('html, body').animate(
+      {
+        scrollTop: $('#form-movil').offset().top,
+      },
+      2000,
+      function () {
+        $('#form-movil').find('#nombre').focus();
+      }
+    );
+  } else {
+    $('html, body').animate(
+      {
+        scrollTop: 0,
+      },
+      2000,
+      function () {
+        $('#form').find('#nombre').focus();
+      }
+    );
+  }
+});

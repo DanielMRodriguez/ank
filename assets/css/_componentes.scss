@@ -36,14 +36,17 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 20;
-    position: absolute;
+    transform: translateY(4px);
     right: -1%;
     bottom: 4%;
 
+    @media (min-width:768px) {
+        display: inline-block;
+    }
 }
 
 .rigth-arrow {
@@ -52,7 +55,7 @@
     border-bottom: 4px solid #fff;
     border-right: 4px solid #fff;
     border-bottom-right-radius: 5px;
-    transform: translateX(-1px) rotate(-45deg);
+    transform: translateX(7px) translateY(8px) rotate(-45deg);
 }
 
 //form
@@ -62,6 +65,10 @@
     margin-bottom: 20px;
     font-size: 16px;
     padding-left: 7px;
+
+    @media (min-width:768px) {
+        border-bottom: 2.5px solid $verde;
+    }
 }
 
 .input::placeholder {
@@ -79,9 +86,19 @@
     font-size: 20px;
     padding: 15px 15px;
     min-width: 150px;
-    border: 1px solid transparent;
+    border: 1px solid $verde;
     margin: auto;
     display: block;
+    transition: .4s;
+}
+
+.button-verde:hover {
+    background-color: white;
+    color: $verde
+}
+
+.button-verde:active {
+    transform: scale(.9);
 }
 
 //cards circulares
@@ -208,15 +225,19 @@
 }
 
 .carousel-control-prev {
-    left: -15%;
+    left: -12%;
 }
 
 .carousel-control-next {
-    right: -15%;
+    right: -12%;
 }
 
 .carousel-inner {
     padding-bottom: 35px;
+}
+
+.indicators__bottom {
+    bottom: -30px;
 }
 
 

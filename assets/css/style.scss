@@ -24,7 +24,7 @@ nav {
         @media (min-width:768px) {
             padding-top: 200px;
             padding-bottom: 50px;
-            background-image: url('../img/bg-desktop.jpg');
+            background-image: url('../img/ss.png');
 
         }
     }
@@ -41,16 +41,17 @@ nav {
         }
 
         .title {
-            font-size: 22px;
+            font-size: 26px;
             color: white;
             text-align: center;
             font-weight: 600;
-            text-shadow: 2px 2px 2px black;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
             position: relative;
             z-index: 2;
 
             @media (min-width:768px) {
                 font-size: 42px;
+                text-align: left;
             }
 
             span {
@@ -71,6 +72,11 @@ nav {
                     margin: auto;
                     right: 0;
                     left: 0;
+
+                    @media (min-width:768px) {
+                        margin: 0;
+                        width: 85%;
+                    }
                 }
             }
         }
@@ -115,7 +121,7 @@ nav {
 
 .diagrama {
     .diag {
-        height: 200px;
+        height: 300px;
 
         @media (min-width:768px) {
             height: initial;
@@ -227,8 +233,6 @@ nav {
     padding-bottom: 35px;
     background-color: #eeeeee;
 
-
-
     .video {
         width: 95%;
         margin: auto;
@@ -240,6 +244,17 @@ nav {
         background-color: white;
         padding: 20px 15px;
         box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        transition: .4s;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
+            z-index: 4;
+        }
 
         h3 {
             color: $verde;
@@ -263,7 +278,7 @@ nav {
         .video {
             width: 80%;
             margin-bottom: -100px;
-
+            max-width: 1080px;
         }
 
         .video__container {
@@ -368,20 +383,22 @@ nav {
     }
 
     .servicios__list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-shrink: 1;
+        flex-wrap: wrap;
+
         margin-left: 20px;
-        justify-content: center;
+        justify-content: space-around;
 
         @media (min-width:400px) {
 
-            grid-template-columns: repeat(3, 1fr);
+            // grid-template-columns: repeat(3, 1fr);
         }
 
 
         @media (min-width:750px) {
 
-            grid-template-columns: repeat(4, 1fr);
+            // grid-template-columns: repeat(4, 1fr);
         }
 
         @media (min-width:1000px) {
@@ -391,6 +408,8 @@ nav {
         }
 
         .servicios__list-item {
+            margin: 10px;
+
             p {
                 color: white;
                 font-weight: 400;

@@ -287,3 +287,12 @@
         padding: 0;
     }
 }
+
+
+label.error {
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    background: rgba($color: $verde, $alpha: .6);
+    transform: translateY(-14px);
+}

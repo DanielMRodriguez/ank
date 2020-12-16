@@ -115,7 +115,7 @@ class Landing extends CI_Controller
 
     $this->email->to('pablocruzmkt@gmail.com,ventas@anks.mx');
 
-    $this->email->cc('luis.mendoza@olozfera.com');
+    $this->email->cc('luis.mendoza.0896@gmail.com');
     $this->email->subject("Nueva contacto");
     $this->email->message($mensaje);
     $this->email->send();

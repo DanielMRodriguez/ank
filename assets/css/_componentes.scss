@@ -296,3 +296,60 @@ label.error {
     background: rgba($color: $verde, $alpha: .6);
     transform: translateY(-14px);
 }
+
+//loader
+
+.container-loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba($color: #fff, $alpha: .7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.loader {
+    border-top: 2px solid $verde;
+    border-right: 2px solid $verde;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes loading {
+    0% {
+        transform: rotate(00deg)
+    }
+
+    30% {
+        transform: rotate(60deg)
+    }
+
+
+    50% {
+        transform: rotate(160deg)
+    }
+
+
+    70% {
+        transform: rotate(260deg)
+    }
+
+    80% {
+        transform: rotate(300deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}

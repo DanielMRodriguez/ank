@@ -48,6 +48,10 @@ $csrf = array(
 </head>
 
 <body>
+
+    <div class="container-loader d-none" id="loader-page">
+        <div class="loader"></div>
+    </div>
     <nav class="container-fluid">
         <div class="row justify-content-between">
             <div class="col-auto">

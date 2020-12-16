@@ -64,8 +64,8 @@ $(function () {
 			let form = $("#" + el[0].dataset.form);
 
 			if (validarFormulario(form)) {
-				$("#loading-page").removeClass("d-none");
-				$("#loading-page").addClass("d-flex");
+				$("#loader-page").removeClass("d-none");
+				$("#loader-page").addClass("d-flex");
 				$("#enviar").attr("disabled", "true");
 
 				form.submit();

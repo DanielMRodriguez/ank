@@ -85,3 +85,35 @@ if ($(window).width() < 768) {
 		$(this).closest(".card-grid").flip(false);
 	});
 }
+
+var video_wrapper = $(".youtube-video-place");
+//  Check to see if youtube wrapper exists
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+function onYouTubeIframeAPIReady() {
+	player = new YT.Player("player", {
+		height: "360",
+		width: "300",
+		videoId: "AoTl5VbGR54",
+		events: {
+			onReady: onPlayerReady,
+		},
+	});
+}
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+	event.target.playVideo();
+}
+$(document).ready(function () {});
+
+if (video_wrapper.length) {
+	// If user clicks on the video wrapper load the video.
+
+	$(".play-youtube-video").on("click", function () {
+		/* Dynamically inject the iframe on demand of the user.
+ Pull the youtube url from the data attribute on the wrapper element. */
+		video_wrapper.html('<div id="player"></div>');
+		onYouTubeIframeAPIReady();
+	});
+}

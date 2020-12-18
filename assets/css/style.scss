@@ -458,4 +458,24 @@ nav {
     }
 }
 
+.embed-responsive-4by3::before {
+    padding-top: 0;
+}
+
+.embed-responsive {
+    height: 200px;
+
+    @media (min-width:400px) {
+        height: 300px;
+    }
+
+    @media (min-width:600px) {
+        height: 360px;
+    }
+
+    @media (min-width:768px) {
+        height: 600px;
+    }
+}
+
 @import "_componentes.scss";

@@ -219,9 +219,15 @@ $csrf = array(
         <div class="row justify-content-center">
             <div class="col-12 video__container">
                 <div class="video">
-                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/AoTl5VbGR54" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <div class="youtube-video-place embed-responsive embed-responsive-4by3 "
+                        data-yt-url="https://www.youtube.com/embed/AoTl5VbGR54?rel=0&showinfo=0&autoplay=1">
+                        <img src="<?php echo base_url(); ?>assets/img/thumbnail-movil.jpg" alt="Video"
+                            class="h-100 d-block  d-md-none m-auto play-youtube-video" async>
+                        <img src="<?php echo base_url(); ?>assets/img/thumbnail-desktop.jpg" alt="Video"
+                            class="h-100 d-none d-md-block  m-auto play-youtube-video" async>
+                    </div>
+
+
                 </div>
             </div>
         </div>
@@ -632,7 +638,8 @@ $csrf = array(
     </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/form.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/app.js"></script>
+    <script src="https://www.youtube.com/iframe_api" async></script>
+    <script src="<?php echo base_url(); ?>assets/js/app.js" async></script>
 </body>
 
 </html>

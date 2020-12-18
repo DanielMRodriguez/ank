@@ -258,12 +258,13 @@ nav {
 
         h3 {
             color: $verde;
-            font-size: 18px;
+            font-size: 22px;
             font-weight: 600;
         }
 
         p {
-            font-size: 14px;
+            font-size: 16px;
+            margin-bottom: 0;
         }
     }
 
@@ -272,7 +273,7 @@ nav {
         padding-top: 0;
 
         .items__card {
-            min-height: 150px;
+            min-height: 160px;
         }
 
         .video {

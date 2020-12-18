@@ -139,26 +139,7 @@ class Landing extends CI_Controller
   }
 
   // VALIDAR RECAPTCHA
-  public function validarRecaptcha($post)
-  {
 
-    if (isset($post['g-recaptcha-response']) and !empty($post['g-recaptcha-response'])) {
-      $captcha = $post['g-recaptcha-response'];
-      $key  = "6LcH96UZAAAAAFSLcr-hGd1XQ4c0pF22s0a7KXZp";
-
-      $ch = curl_init("https://www.google.com/recaptcha/api/siteverify?secret=" . $key . "&response=$captcha");
-
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      $verify = curl_exec($ch);
-
-      $respuesta = json_decode($verify);
-
-      if ($respuesta->success == true)
-        return true;
-    }
-
-    return false;
-  }
 }
 
 

@@ -40,6 +40,19 @@ $csrf = array(
     gtag('config', 'AW-573095134');
     </script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180131416-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-180131416-1');
+    </script>
+
     <!-- Favicon  -->
     <link href="<?php echo base_url(); ?>assets/img/favicon2.ico" rel="icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -293,7 +306,8 @@ $csrf = array(
                         <div class="front">
                             <a class="flip">
                                 <div class="cont">
-                                    <img src="<?php echo base_url(); ?>assets/img/reporte-icon.png" alt="" />
+
+                                    <img src="<?php echo base_url(); ?>assets/img/asigna-icon.png" alt="" />
                                 </div>
                             </a>
                         </div>
@@ -301,13 +315,13 @@ $csrf = array(
                             <a class="unflip">
                                 <div class="cont">
                                     <p>
-                                        Relaciona gafete con número de colaborador en el sistema.
+                                        Asigna un gafete a cada persona en el sistema para tener registros precisos.
                                     </p>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <h4 class="subtitle" id="super">Supervisa</h4>
+                    <h4 class="subtitle" id="super">Asigna</h4>
                 </div>
 
                 <div class="col-12 col-md-5 col-lg-4 mb-4">
@@ -315,7 +329,7 @@ $csrf = array(
                         <div class="front">
                             <a class="flip">
                                 <div class="cont">
-                                    <img src="<?php echo base_url(); ?>assets/img/asigna-icon.png" alt="" />
+                                    <img src="<?php echo base_url(); ?>assets/img/reporte-icon.png" alt="" />
                                 </div>
                             </a>
                         </div>
@@ -330,7 +344,7 @@ $csrf = array(
                             </a>
                         </div>
                     </div>
-                    <h4 class="subtitle">Recibe</h4>
+                    <h4 class="subtitle">Supervisa</h4>
                 </div>
             </div>
         </div>
@@ -419,13 +433,13 @@ $csrf = array(
         <div class="container px-0">
             <div class="row justify-content-center">
                 <div class="col-12">
-                    <h3 class="title">Plan de renta</h3>
+                    <h3 class="title">Plan de Renta</h3>
                 </div>
 
                 <div class="col-md-4 col-lg-3 d-none d-md-block mx-lg-3">
                     <div class="planes">
                         <div>
-                            <h4 class="planes__title">Renta mensual</h4>
+                            <h4 class="planes__title">Renta Mensual</h4>
                             <p>
                                 Renta de la solución completa (contrato mínimo de 6 meses)
                                 desde
@@ -445,7 +459,7 @@ $csrf = array(
                             <p>BEST SELLER</p>
                         </div>
                         <div>
-                            <h4 class="planes__title">Renta semestral</h4>
+                            <h4 class="planes__title">Renta Semestral</h4>
                             <p>
                                 Renta de la solución completa.<br />
                                 <b>Paga 6 meses y obtén un descuento del 5%</b>
@@ -461,7 +475,7 @@ $csrf = array(
                 <div class="col-md-4 col-lg-3 d-none d-md-block mx-lg-3">
                     <div class="planes">
                         <div>
-                            <h4 class="planes__title">Renta anual</h4>
+                            <h4 class="planes__title">Renta Anual</h4>
                             <p>
                                 Renta de la solución completa.
                                 <b>Paga 12 meses y obtén un 10% de descuento.</b>

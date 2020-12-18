@@ -40,6 +40,38 @@ $csrf = array(
     gtag('config', 'AW-573095134');
     </script>
 
+    <!-- Event snippet for Lead - LP conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+        var callback = function() {
+            if (typeof(url) != 'undefined') {
+                window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-573095134/zBmoCKPq4O0BEN75opEC',
+            'event_callback': callback
+        });
+        return false;
+    }
+    const URL = window.
+    gtag_report_conversion(url)
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180131416-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-180131416-1');
+    </script>
+
     <!-- Favicon  -->
     <link href="<?php echo base_url(); ?>assets/img/favicon2.ico" rel="icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"

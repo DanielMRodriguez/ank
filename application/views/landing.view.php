@@ -56,8 +56,8 @@ $csrf = array(
     <!-- Favicon  -->
     <link href="<?php echo base_url(); ?>assets/img/favicon2.ico" rel="icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-    <link rel="preload" as="style" href="<?php echo base_url(); ?>assets/css/style.min.css" />
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.min.css" />
 </head>
 
 <body>
@@ -299,7 +299,7 @@ $csrf = array(
                         <div class="back">
                             <a class="unflip">
                                 <div class="cont">
-                                    <p>Recibe los gafetes inteligentes ya congurados.</p>
+                                    <p>Recibe los gafetes inteligentes ya configurados.</p>
                                 </div>
                             </a>
                         </div>
@@ -418,7 +418,7 @@ $csrf = array(
                 <div class="diagrama__content">
                     <p>
                         El distanciamiento social es recomendado como la acción más eficaz
-                        para pre-venir el contagio de patógenos como el COVID-19.
+                        para prevenir el contagio de patógenos como el COVID-19.
                     </p>
                     <p class="pie">
                         El sistema de registro y reporte de contactos de riesgo permite

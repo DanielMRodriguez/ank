@@ -500,7 +500,7 @@ $csrf = array(
                             <div class="carousel-item active planes-car">
                                 <div class="planes">
                                     <div>
-                                        <h4 class="planes__title">Renta mensual</h4>
+                                        <h4 class="planes__title">Renta Mensual</h4>
                                         <p>
                                             Renta de la solución completa (contrato mínimo de 6
                                             meses) desde <b>$475.00</b> + iva <br />por unidad.
@@ -515,8 +515,11 @@ $csrf = array(
 
                             <div class="carousel-item planes-car">
                                 <div class="planes">
+                                    <div class="bange__best">
+                                        <p>BEST SELLER</p>
+                                    </div>
                                     <div>
-                                        <h4 class="planes__title">Renta semestral</h4>
+                                        <h4 class="planes__title">Renta Semestral</h4>
                                         <p>
                                             Renta de la solución completa.<br />
                                             <b>Paga 6 meses y obtén un descuento del 5%</b>
@@ -532,7 +535,7 @@ $csrf = array(
                             <div class="carousel-item planes-car">
                                 <div class="planes">
                                     <div>
-                                        <h4 class="planes__title">Renta anual</h4>
+                                        <h4 class="planes__title">Renta Anual</h4>
                                         <p>
                                             Renta de la solución completa.
                                             <b>Paga 12 meses y obtén un 10% de descuento.</b>
